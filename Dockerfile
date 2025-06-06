@@ -13,6 +13,7 @@ RUN apt-get update && \
     gdal-bin \
     libgdal-dev \
     libudunits2-dev && \
+    rustc && \
     python3 -m venv ${VIRTUAL_ENV} && \
     . ${VIRTUAL_ENV}/bin/activate && \
     pip3 install --upgrade pip && \
