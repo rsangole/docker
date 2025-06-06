@@ -1,9 +1,9 @@
-name: Build and Push Docker Image
+name: hatmatrix/blog CI
 
 on:
   push:
     branches:
-      - main
+    - main
   pull_request:
     branches:
       - main
