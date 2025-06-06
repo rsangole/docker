@@ -16,11 +16,9 @@ WORKDIR /app
 
 # Copy Python requirements and install with uv
 COPY requirements.txt .
-RUN uv pip install -r requirements.txt
+# RUN uv pip install -r requirements.txt
 
-# Copy R project files (including renv.lock if present)
+# Copy R package files and install with Rscript
 COPY install_r.R .
 COPY r_pkgs.yml .
-
-# Restore R packages using renv if renv.lock exists
-RUN if [ -f r_pkgs.yml ]; then Rscript install_r.R ; fi
+RUN Rscript install_r.R
