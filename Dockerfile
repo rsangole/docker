@@ -18,7 +18,7 @@ RUN apt-get update && \
     pip3 install --upgrade pip && \
     pip3 install uv && \
     rm -rf /var/lib/apt/lists/* \
-    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -y 
+    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 WORKDIR /app
 
