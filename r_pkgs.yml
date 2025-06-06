@@ -1,9 +1,57 @@
-plotting:
-  - gganimate
-  - cowplot
+data_munging:
+  - bit64
+  - data.table
+  - janitor
+  - qs2
+  - tsibble
 
-# machine_learning:
-#   caret
-#   randomForest
-#   xgboost
-  
+plotting:
+  - billboarder
+  - cowplot
+  - DiagrammeR
+  - gganimate
+  - GGally
+  - ggExtra
+  - ggfortify
+  - patchwork
+  - plotly
+  - timeviz
+  - txtplot
+
+reporting:
+  - profvis
+  - reprex
+
+workflow:
+  - furrr
+  - targets
+	- config
+
+connectivity:
+  - curl
+  - getPass
+  - httr
+  - RCurl
+  - skimr
+
+shiny:
+	- shiny
+	- shinyWidgets
+	- reactable
+ 	- kableExtra
+	- shinythemes
+	- shinyBS
+	- shinydashboardPlus
+	- shinyEffects
+	- shinyjqui
+	- showtext
+	- shinycssloaders
+	- bs4Dash
+	- flexdashboard
+	- listviewer
+	- trelliscopejs
+	- shinyFeedback
+	- waiter
+	- rpivotTable
+	- downloadthis
+	- shinyalert

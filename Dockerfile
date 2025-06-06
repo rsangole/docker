@@ -23,7 +23,7 @@ WORKDIR /app
 
 # Copy Python requirements and install with uv
 COPY requirements.txt .
-# RUN uv pip install -r requirements.txt
+RUN uv pip install -r requirements.txt
 
 # Copy R package files and install with Rscript
 COPY install_r.R .
