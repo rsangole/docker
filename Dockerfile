@@ -19,9 +19,8 @@ COPY requirements.txt .
 RUN uv pip install -r requirements.txt
 
 # Copy R project files (including renv.lock if present)
-COPY . .
+COPY install_r.R .
+COPY r_pkgs.yml .
 
 # Restore R packages using renv if renv.lock exists
-RUN if [ -f renv.lock ]; then Rscript -e "install.packages('renv'); renv::restore()" ; fi
-
-CMD ["python3", "app.py"]
+RUN if [ -f r_pkgs.yml]; then Rscript install_r.R ; fi
