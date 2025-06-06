@@ -1,5 +1,5 @@
 quarto
-polars
+polars-lts-cpu
 plotly
 duckdb
 radian
