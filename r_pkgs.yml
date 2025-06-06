@@ -1,0 +1,9 @@
+plotting:
+  - gganimate
+  - cowplot
+
+# machine_learning:
+#   caret
+#   randomForest
+#   xgboost
+  
