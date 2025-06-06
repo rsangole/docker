@@ -15,7 +15,6 @@ plotting:
   - ggfortify
   - patchwork
   - plotly
-  - timeviz
   - txtplot
 
 reporting:
