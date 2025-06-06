@@ -5,7 +5,14 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 # Install system dependencies for Python and uv
 RUN apt-get update && \
-    apt-get install -y python3 python3-pip python3-venv curl && \
+    apt-get install -y \
+    python3 \
+    python3-pip \
+    python3-venv \
+    curl \
+    gdal-bin \
+    libgdal-dev \
+    libudunits2-dev && \
     python3 -m venv ${VIRTUAL_ENV} && \
     . ${VIRTUAL_ENV}/bin/activate && \
     pip3 install --upgrade pip && \
