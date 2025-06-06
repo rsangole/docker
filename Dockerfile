@@ -23,4 +23,4 @@ COPY install_r.R .
 COPY r_pkgs.yml .
 
 # Restore R packages using renv if renv.lock exists
-RUN if [ -f r_pkgs.yml]; then Rscript install_r.R ; fi
+RUN if [ -f /app/r_pkgs.yml]; then Rscript /app/install_r.R ; fi
