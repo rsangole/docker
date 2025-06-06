@@ -13,12 +13,12 @@ RUN apt-get update && \
     gdal-bin \
     libgdal-dev \
     libudunits2-dev && \
-    rustc && \
     python3 -m venv ${VIRTUAL_ENV} && \
     . ${VIRTUAL_ENV}/bin/activate && \
     pip3 install --upgrade pip && \
     pip3 install uv && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* \
+    && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 WORKDIR /app
 
