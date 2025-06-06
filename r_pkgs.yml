@@ -27,7 +27,6 @@ workflow:
   - config
   - box
   - languageserver
-  - httpgd
 
 connectivity:
   - curl
