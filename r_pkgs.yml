@@ -25,7 +25,7 @@ reporting:
 workflow:
   - furrr
   - targets
-	- config
+  - config
 
 connectivity:
   - curl
@@ -35,23 +35,23 @@ connectivity:
   - skimr
 
 shiny:
-	- shiny
-	- shinyWidgets
-	- reactable
- 	- kableExtra
-	- shinythemes
-	- shinyBS
-	- shinydashboardPlus
-	- shinyEffects
-	- shinyjqui
-	- showtext
-	- shinycssloaders
-	- bs4Dash
-	- flexdashboard
-	- listviewer
-	- trelliscopejs
-	- shinyFeedback
-	- waiter
-	- rpivotTable
-	- downloadthis
-	- shinyalert
+  - shiny
+  - shinyWidgets
+  - reactable
+  - kableExtra
+  - shinythemes
+  - shinyBS
+  - shinydashboardPlus
+  - shinyEffects
+  - shinyjqui
+  - showtext
+  - shinycssloaders
+  - bs4Dash
+  - flexdashboard
+  - listviewer
+  - trelliscopejs
+  - shinyFeedback
+  - waiter
+  - rpivotTable
+  - downloadthis
+  - shinyalert
