@@ -4,6 +4,7 @@ data_munging:
   - janitor
   - qs2
   - tsibble
+  - here
 
 plotting:
   - billboarder
@@ -16,6 +17,8 @@ plotting:
   - patchwork
   - plotly
   - txtplot
+  - calendR
+  - lunar
 
 reporting:
   - profvis
@@ -68,3 +71,4 @@ ml:
   - recipes
   - rsample
   - yardstick
+  - timetk
